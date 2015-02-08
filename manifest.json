@@ -5,18 +5,19 @@
     "description": "Changes random words on a page to either 'Yolo' or 'Butt'",
     "version": "1.0",
 
-    "browser_action": {
-        "default_icon": "static/img/icon.png",
-        "default_popup": "popup.html",
-        "default_title": "Click here dummy!"
-    },
+    // "browser_action": {
+    //     "default_icon": "static/img/icon.png",
+    //     "default_popup": "popup.html",
+    //     "default_title": "Click here dummy!"
+    // },
     "permissions": [
         "activeTab",
         "https://ajax.googleapis.com/"
     ],
     "content_scripts" : [
     {
-        "matches" : ["http://*/*"],
-        "js": ["runningScript.js"]
+        "matches" : ["<all_urls>"],
+        "js": ["runningScript.js"],
+        "run_at" : "document_end"
     }]
 }
