@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+
+    "name": "YoloButt",
+    "description": "Changes random words on a page to either 'Yolo' or 'Butt'",
+    "version": "1.0",
+
+    "permissions": [
+        "activeTab"
+    ]   
+}
